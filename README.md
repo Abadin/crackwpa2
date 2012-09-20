@@ -14,24 +14,21 @@ apt-get install aircrack-ng
 
 or you can run live Backtrack from a USB. (http://www.backtrack-linux.org/tutorials/usb-live-install/)
 
+mkdir /root/crackcap
 
+mkdir /root/dictionary
 
-Now you copy the script somewhere on your computer/live installation in a file
+make a .txt file inside the /root/dictionay containing the password of the wpa2 router you wish to crack or start browsing the internet for password dictionaries.
 
+run from terminal "nano /usr/sbin/your own name of the program"
 
-create a folder in root called crackcap
+copy paste the script code in to the nano
 
+Ones you have copy pastet the script you will have to change this part of the script 
+aircrack-ng ./crackcap/capture-01.cap -w (your .txt with password)
 
-then do a nano (filepath of the script) here you will have to edit this part of the code to what ever .txt 
-
-aircrack-ng ./crackcap/capture-01.cap -w (your .txt with password) 
-
-
-then you make a chmod +x (filepath of the script)
-
-Furthermore you will need to create a .txt file with the password of the WPA2 network you are trying to crack
-
+then you make a chmod +x "/usr/sbin/your own name of the program"
 
 (Remember this is done in a controlled enviroment)
 
-Type crackwpa2, follow the instruction, and enjoy :D
+Type "your own name of the program", follow the instruction, and enjoy :D
