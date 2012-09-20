@@ -5,8 +5,11 @@ To start with, this can only run from POSIX systems.
 You will need to install some programs.
 
 apt-get install airmon-ng
+
 apt-get install airodump-ng
+
 apt-get install aireplay-ng
+
 apt-get install aircrack-ng
 
 or you can run live Backtrack from a USB. (http://www.backtrack-linux.org/tutorials/usb-live-install/)
