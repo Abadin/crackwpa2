@@ -34,4 +34,4 @@ Furthermore you will need to create a .txt file with the password of the WPA2 ne
 
 (Remember this is done in a controlled enviroment)
 
-Follow the instruction and enjoy :D
+Type crackwpa2, follow the instruction, and enjoy :D
